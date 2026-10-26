@@ -1,0 +1,204 @@
+1
+Evaluación de la presentación
+Aquila Guard · Hito 1 · 25 de octubre de 2026
+El PowerPoint cubre problema, usuario, demostración, mapa, arquitectura, alternativas y
+viabilidad. La identidad azul es consistente y el recorrido es fácil de reconocer. Para fortalecer
+la evaluación, la apertura necesita una promesa específica y la exposición debe mostrar clics
+reales en el prototipo.
+Se revisaron las nueve láminas del archivo Navy Gradient Futuristic Computer Science
+Presentation.pptx, sus textos, relaciones de hipervínculos y una representación visual de cada
+lámina. El prototipo y los requisitos se contrastaron con los archivos recibidos. No se observó
+una exposición ni una defensa individual.
+La pauta asigna 50 puntos a la exposición y 50 al documento. El archivo PowerPoint no
+permite decidir por sí solo la nota del Hito 1. La revisión usa niveles de referencia para
+orientar correcciones. A4 y A5 requieren observación presencial.
+El usuario confirmó autorización del docente para un equipo de tres. No se considera esa
+composición un incumplimiento. La sección es 001 y la ciudad es Santiago, Providencia. El
+equipo informó que todavía no tiene cuentas de GitHub ni repositorio.
+Cambios prioritarios antes de presentar
+1. Abrir con una frase que diga para quién es la app, qué dificultad resuelve y qué resultado
+entrega.
+2. Tener abierto el HTML y recorrer Inicio, Revisar, Alertas y Resumen con un ejemplo ficticio.
+3. Conectar el mapa con ese recorrido y explicar una petición por las capas propuestas.
+4. Ensayar entre 4:30 y 5:00 con participación de los tres integrantes y preparar la pregunta al
+azar.
+
+
+2
+Criterios del bloque A
+Los niveles siguientes describen el material visible y sus condiciones. No acreditan el tiempo,
+las palabras que dirán o la calidad de la respuesta al docente.
+Criterio
+Referencia
+Evidencia y acción
+A1 · 15
+pts
+Competente como
+referencia
+Láminas 1 a 3 muestran marca, contexto y Elena. El
+resultado prometido se debe reconstruir. Incluir una frase
+verificable antes de 1:30. Puntaje final pendiente de
+exposición.
+A2 · 10
+pts
+En desarrollo si solo
+muestran láminas
+La lámina 4 contiene una captura. La app separada sí
+aporta navegación. Ejecutar al menos tres pantallas
+encadenadas para aspirar a destacado.
+A3 · 8 pts
+Competente como
+referencia
+La lámina 5 presenta secciones bajo navegación global.
+Explicar jerarquía y rutas usando el flujo del usuario para
+alcanzar destacado.
+A4 · 7 pts
+No observable
+El archivo no demuestra duración, reparto de palabra o
+ausencia de lectura. Usar el guion de 4:45 y registrar tres
+ensayos reales.
+A5 · 10
+pts
+No observable
+La respuesta de un integrante al azar ocurre después del
+pitch. Cada integrante debe explicar decisiones y límites
+sin ayuda del grupo.
+Por qué no se entrega una nota final
+A1 depende de lo que se entiende y del momento en que aparece la promesa. A2 depende de
+mostrar navegación en sala. A4 y A5 dependen de acciones que no constan en el archivo.
+Convertir esos vacíos en puntos máximos o en ceros produciría una nota sin evidencia.
+La cláusula de propuesta no identificable puede dejar todo el bloque A en cero si al minuto
+5:00 el evaluador no puede describir qué venden, para quién y qué problema resuelven. La
+apertura propuesta reduce ese riesgo, pero necesita ensayo y ejecución.
+
+
+3
+Observaciones por lámina
+Lámina
+Hallazgo
+Corrección o uso sugerido
+1
+Promesa general
+“Orientación digital para todos” no delimita público ni
+resultado. Decir la promesa concreta al abrir. El nombre de
+archivo dibujado no es un hipervínculo.
+2
+Datos verificables
+con límite
+Las cifras de SUBTEL corresponden a conectividad y
+habilidades, no a victimización. Mantener ese límite y
+ampliar la fuente para que pueda leerse en sala.
+3
+Persona y flujo
+breve
+Elena está identificada como ficticia. Explicar la situación
+de engaño y qué decisión podrá tomar tras ver las
+razones.
+4
+Captura de apoyo
+Cambiar al HTML durante esta lámina. Una imagen no
+demuestra tres pantallas enlazadas.
+5
+Mapa global claro
+Relacionar Inicio, Revisar, resultado, Alertas y Resumen.
+El resultado vive dentro de Revisar.
+6
+Diseño proyectado
+Explicar con un mensaje concreto qué hace cliente,
+controlador, negocio y repositorios. Mantener visible la
+diferencia con la demo local.
+7
+Alternativas y
+costos
+Complementar oralmente con criterios de aprendizaje,
+soporte y móvil. La firma auténtica se resuelve en el
+documento.
+8
+Hipótesis
+comerciales
+No se acreditó “experiencia familiar real”. Presentarla
+como antecedente solo si pueden explicarla. Suscripción,
+precio y encuestas siguen por validar.
+9
+Cierre genérico
+Cerrar repitiendo público, dificultad y resultado. El
+agradecimiento puede acompañar esa frase.
+
+
+4
+Diseño y verificaciones del archivo
+Las nueve láminas mantienen una paleta azul y una composición consistente. En la
+representación revisada, el texto principal se distingue y no se observa una superposición que
+impida leerlo. El logo mantiene presencia en el conjunto.
+La captura de la lámina 4 ocupa un área pequeña para una demostración. La fuente en la
+lámina 2 y los textos interiores de las láminas 6 a 8 necesitan comprobarse desde el fondo de
+la sala. El tamaño de una pantalla de computador no acredita legibilidad durante la
+proyección.
+Se encontraron cadenas de texto partidas en varios elementos OOXML. Algunas
+corresponden a fragmentos de composición y no se deben tratar automáticamente como un
+error visual. En cambio, conviene revisar tildes visibles en términos como orientación,
+revisión, sesión, demostración y decisión, y el espacio en “Poblaciones diferentes”.
+No se encontraron relaciones externas de hipervínculo en ninguna lámina. Las barras con el
+nombre Aquila_Guard_Prototipo.html son elementos visuales. Además, el archivo real del
+paquete se llama Aquila_Guard_Prototipo_Hito1.html. Preparar el navegador antes del pitch o
+agregar un enlace correcto al archivo real.
+El PDF entregado representa las mismas nueve láminas a partir de su renderizado. El PPTX
+original se conserva sin editar. Como el renderizador puede sustituir fuentes o interpretar
+ciertos efectos de manera distinta a PowerPoint, comparar el PDF con el archivo original en el
+equipo que se usará para exponer.
+Apertura sugerida
+“Para personas mayores que dudan ante un enlace, correo o mensaje sospechoso, Aquila
+Guard muestra señales comprensibles y una acción de verificación antes de responder o
+entregar información. Hoy demostramos esa experiencia con ejemplos ficticios.”
+La frase evita prometer detección universal. La revisión del prototipo confirma que solo aplica
+patrones locales y que los teléfonos se revisan por formato. No hay evidencia para anunciar
+protección total o una tasa de acierto.
+
+
+5
+Bloque B y paquete renovado
+El bloque B se evalúa con el documento de propuesta, no con las láminas. Esta tabla localiza
+la evidencia preparada y las condiciones de cierre que todavía corresponden al equipo.
+Criterio
+Evidencia
+preparada
+Condición o limitación
+B1 · 8 pts
+Propuesta PDF e
+índice
+Incluye tapa, índice automático, introducción, desarrollo,
+conclusión, bibliografía y anexos. Ciudad Santiago,
+Providencia y sección 001 incorporadas.
+B2 · 10
+pts
+Sección 1
+Fuentes primarias chilenas con cifras y alcance declarado.
+La validación de necesidad con usuarios sigue pendiente.
+B3 · 12
+pts
+Secciones 5 y 5.1
+Diagrama propio y caso de uso por capa. La API es una
+propuesta y no una implementación operativa.
+B4 · 10
+pts
+Secciones 6 a 6.2 y
+anexo B
+Alternativas, criterios y desventajas explícitas. La firma
+auténtica del equipo está pendiente.
+B5 · 6 pts
+Propuesta y
+capturas
+Identidad consistente y figuras del prototipo. Los datos
+confirmados de ciudad y sección están incorporados.
+B6 · 4 pts
+Sección 9
+Referencias APA y citas en el cuerpo con URLs
+verificadas. Los enlaces técnicos dinámicos usan fecha de
+consulta.
+Condiciones externas a los documentos
+GitHub debe existir, contener la entrega y ser accesible al docente. El ZIP no sustituye ese
+requisito. El equipo informó que aún no tiene cuentas de GitHub ni repositorio. Falta crearlos y
+comprobar colaboradores, acceso docente y registro real de entrega.
+La pauta fija cierre en septiembre de 2026. La presente revisión de octubre no demuestra
+cumplimiento del plazo ni modifica el calendario del curso. El equipo debe confirmar la
+situación de su entrega con el registro real.

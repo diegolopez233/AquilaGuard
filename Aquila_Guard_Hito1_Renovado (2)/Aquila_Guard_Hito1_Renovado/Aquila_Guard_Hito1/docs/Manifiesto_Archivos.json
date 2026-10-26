@@ -1,0 +1,177 @@
+{
+  "revision_date": "2026-10-25",
+  "section": "001",
+  "city": "Santiago, Providencia",
+  "files": [
+    {
+      "path": ".env.example",
+      "bytes": 185,
+      "sha256": "141aba6c6fcdeef62c4109edd4ec8f544bc9bce0459aa52253be1c8cb20150a0"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 102,
+      "sha256": "9f289026767074041a3e9d40c07a02b3edcd4b9bca107172b0931424abf2a497"
+    },
+    {
+      "path": "Aquila_Guard_Prototipo_Hito1.html",
+      "bytes": 16730,
+      "sha256": "611f7d7913a8bdd84483994dc4729af7b06f9fb63e523350cb0bc04b6792de0a"
+    },
+    {
+      "path": "assets/app.css",
+      "bytes": 23728,
+      "sha256": "f17e36d3573ea3ad7011c70465e96a7332f300c5b7cabab3c6b0b388938a3f75"
+    },
+    {
+      "path": "assets/aquila_guard_logo.png",
+      "bytes": 92433,
+      "sha256": "01e80fbf59e1ab2cc9026967177cf6d557edcb5c8073ee7be49ff881055776b8"
+    },
+    {
+      "path": "db/001_propuesta.sql",
+      "bytes": 563,
+      "sha256": "4f5e253031b6a05e997979274abb548d4a1ddbce9e6b9f0967176cd7966aa921"
+    },
+    {
+      "path": "db/modelo_propuesto.md",
+      "bytes": 496,
+      "sha256": "ccbb78fb6764765b5030e62913dad97e73279b64fe83d21608b38913345a15bd"
+    },
+    {
+      "path": "docs/Aquila_Guard_Hito1_Presentacion_Original.pdf",
+      "bytes": 2522522,
+      "sha256": "dafa705a6bec5f327af039290507b80889b85b84325282fabfdc31c318937941"
+    },
+    {
+      "path": "docs/Aquila_Guard_Hito1_Presentacion_Original.pptx",
+      "bytes": 1342248,
+      "sha256": "349d2852e3b53f8edeae952851a1f5d8bd60252dc147aa4abbd75af2409bfda5"
+    },
+    {
+      "path": "docs/Aquila_Guard_Hito1_Propuesta.pdf",
+      "bytes": 1014119,
+      "sha256": "1fef4735566e3da2252efe40d09b962aec10fc16c93ef420f2653de6a204b061"
+    },
+    {
+      "path": "docs/Arquitectura.png",
+      "bytes": 172562,
+      "sha256": "412cb0880d6c8d2837c0a6ce56afd1591d48651e5aa15f89c927f4e39288102e"
+    },
+    {
+      "path": "docs/Arquitectura.svg",
+      "bytes": 3040,
+      "sha256": "b108ad100e5f0483e9b09d9fcf1076935accc72932423901e4d86bf611160ab6"
+    },
+    {
+      "path": "docs/Evaluacion_Presentacion_Hito1.pdf",
+      "bytes": 85430,
+      "sha256": "3073b8a12ba4fe3b01419f495eeda22c59ccf6830d416258346ce042d350879d"
+    },
+    {
+      "path": "docs/Evaluacion_Presentacion_Hito1.txt",
+      "bytes": 8711,
+      "sha256": "0fb1e010210fa4f701af17260af1d182422fe5c84af17f9d66f68e221a5849a7"
+    },
+    {
+      "path": "docs/GitHub_y_Firmas.md",
+      "bytes": 2453,
+      "sha256": "28621b15b6393f516f203c3e8c4f99ba90410d716bcd5f0eedf5608ccaabd0a2"
+    },
+    {
+      "path": "docs/Guion_y_Defensa.md",
+      "bytes": 8658,
+      "sha256": "6c0de484fd9b1b667207b1080a523017d34da47a3cc67bfc6520f9722669b72b"
+    },
+    {
+      "path": "docs/Indice_Entregables.html",
+      "bytes": 1372,
+      "sha256": "1c9142f04ec6e78a5128c3b33cb1f9ad92ff99208e7be7682701003d31fa8e45"
+    },
+    {
+      "path": "docs/Mapa_Producto.png",
+      "bytes": 129850,
+      "sha256": "c6531dbfb5cfd90a91443d2eb63bcc94576b69af65e9a3466bc3dfec0a6b1f0b"
+    },
+    {
+      "path": "docs/Mapa_Producto.svg",
+      "bytes": 3291,
+      "sha256": "ad7617c623ffdc2e9fc80d3211b9d3304df14101f2566f9632bcd88ead21d973"
+    },
+    {
+      "path": "docs/Matriz_Hito1.md",
+      "bytes": 2371,
+      "sha256": "60b213e8d4fcd501381d4c18957a162015821ae09e44fa37260585c7de95f60c"
+    },
+    {
+      "path": "docs/Propuesta_Contenido.json",
+      "bytes": 30074,
+      "sha256": "654b59207fe7f3e7980e71edcf0e9af8a9236e551881affcbda79f2cf0382e76"
+    },
+    {
+      "path": "docs/Propuesta_Editable.md",
+      "bytes": 25017,
+      "sha256": "ac25f5cf20dd82d04926e05875c163c8157af2f4a5cac558d1cafec741a856ba"
+    },
+    {
+      "path": "docs/Prototipo_Inicio.png",
+      "bytes": 356474,
+      "sha256": "92879dc39a1072965904f1b3b1a6445ef53d0a9163788dba2169290e9a411ae8"
+    },
+    {
+      "path": "docs/Prototipo_Resultado.png",
+      "bytes": 150183,
+      "sha256": "4f3bbc20e436f054301292bb727e4f03fb5566b4f59f904df36e4573d4533a70"
+    },
+    {
+      "path": "docs/Registro_Revision.md",
+      "bytes": 5292,
+      "sha256": "11c6ee53acf5ac99c4b0081cdd5399ffca15c51163a9b33b79655a9d70077bbf"
+    },
+    {
+      "path": "docs/Registros_Equipo.md",
+      "bytes": 2089,
+      "sha256": "3562144b24f3d6b7dd405ba98bc4e98f3e816142197647b9e9f76b9f31a52dde"
+    },
+    {
+      "path": "docs/Rubrica_Hito1.json",
+      "bytes": 12948,
+      "sha256": "26a87ff1066f394378aee05e58a524715354387824d766299305fede544fd70c"
+    },
+    {
+      "path": "docs/Rubrica_Hito1.md",
+      "bytes": 5534,
+      "sha256": "41e556c84fe70883cb24bf46bfac8c2ee63582103c7c6b52e366832cf4a0804b"
+    },
+    {
+      "path": "docs/Verificacion_Tecnica.json",
+      "bytes": 2885,
+      "sha256": "da5a25f5a9c0024f296531748cb07e1239e28eb128e2bb5905ca9b26024cc675"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6072,
+      "sha256": "2f23f9f5a7489cb301facf2bbf0183162930ead10ef93bb89350b9eac94951a9"
+    },
+    {
+      "path": "src/app.js",
+      "bytes": 13535,
+      "sha256": "d4f468d0a62e0c5f138d55bd776a40810642b6f75eafb4a522b2ed480ae8376b"
+    },
+    {
+      "path": "src/servidor_propuesto/controladores/README.md",
+      "bytes": 209,
+      "sha256": "b5e4f3561b6ae32c8ff33bc33999cf6cb627467c477b990f20f13bb90872b6b9"
+    },
+    {
+      "path": "src/servidor_propuesto/negocio/README.md",
+      "bytes": 203,
+      "sha256": "786abcd6a305e881a86441b76266f0b5c792942f73b030a49249efd3dca6d4cf"
+    },
+    {
+      "path": "src/servidor_propuesto/repositorios/README.md",
+      "bytes": 215,
+      "sha256": "a797697ba6c05d3be7e97de21c0a489b9efa6f9ff049b74d7e71a6b1f3ba6389"
+    }
+  ]
+}

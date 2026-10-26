@@ -1,0 +1,210 @@
+{
+  "cod": "H1",
+  "titulo": "Hito 1 · La propuesta que se vende",
+  "sap": "Nota parcial N1 · 30 por ciento",
+  "rda": "RDA 1 · Integra tecnologías de desarrollo Front-End",
+  "unidad": "Unidad 1 · Aspectos generales de la arquitectura de desarrollo web",
+  "bloques": [
+    {
+      "id": "A",
+      "nombre": "Presentación de 5 minutos",
+      "pts": 50,
+      "criterios": [
+        {
+          "id": "A1",
+          "nombre": "Propuesta de valor",
+          "pts": 15,
+          "niveles": {
+            "d": "En los primeros 90 segundos queda claro qué problema resuelven, para quién y qué prometen. La promesa es concreta y se puede verificar.",
+            "c": "La propuesta se entiende, pero el evaluador debe armar las piezas por su cuenta o la promesa recién aparece pasado el minuto tres.",
+            "e": "Describen el producto pero no el problema ni el destinatario. Queda como una lista de funciones.",
+            "i": "Al minuto 5:00 el evaluador no puede escribir en una línea qué venden, a quién y qué problema resuelven."
+          },
+          "fb": {
+            "d": "Mantengan esa apertura para el Hito 2: la primera frase decide si el resto se escucha.",
+            "c": "Reordenen: problema, afectado, promesa, y recién después la solución. Ensayen los primeros 90 segundos hasta que salgan sin láminas.",
+            "e": "Una lista de funciones no vende. Escriban una sola frase con la fórmula: para [quién] que sufre [problema], nuestro producto [promesa medible].",
+            "i": "Aplica la cláusula de propuesta no identificable. Antes del Hito 2 deben validar la frase de propuesta con el docente en horario de consulta."
+          }
+        },
+        {
+          "id": "A2",
+          "nombre": "Prototipo en pantalla",
+          "pts": 10,
+          "niveles": {
+            "d": "Muestran un prototipo navegable con al menos tres pantallas encadenadas y datos de ejemplo verosímiles.",
+            "c": "Muestran un prototipo navegable pero con pantallas sueltas o datos de relleno evidentes.",
+            "e": "Solo muestran imágenes estáticas o capturas dentro de las láminas.",
+            "i": "No hay prototipo."
+          },
+          "fb": {
+            "d": "El prototipo ya sostiene la demostración. Congelen ese flujo: es el que deben hacer funcionar de verdad en el Hito 3.",
+            "c": "Encadenen las pantallas en un flujo único y reemplacen los datos de relleno por casos reales de su dominio.",
+            "e": "Las capturas no demuestran navegación. Armen el prototipo en una herramienta que permita hacer clic y recorrer tres pantallas.",
+            "i": "Sin prototipo no hay nada que evaluar en este criterio. Es requisito de entrada del Hito 2."
+          }
+        },
+        {
+          "id": "A3",
+          "nombre": "Arquitectura de información visible",
+          "pts": 8,
+          "niveles": {
+            "d": "Presentan el mapa del producto con secciones, jerarquía y rutas de navegación, y lo usan para explicar el recorrido del usuario.",
+            "c": "Presentan el mapa pero no lo conectan con el recorrido del usuario.",
+            "e": "Mencionan las secciones sin estructura ni jerarquía.",
+            "i": "La arquitectura de información no aparece."
+          },
+          "fb": {
+            "d": "Ese mapa es la base del ruteo del Hito 2. Consérvenlo versionado en el repositorio.",
+            "c": "Recorran el mapa contando la historia de un usuario concreto que entra, busca y completa una acción.",
+            "e": "Agrupen las secciones por afinidad, definan niveles y dibujen el árbol. Sin jerarquía no hay navegación que diseñar.",
+            "i": "Este contenido es central en la Unidad 1. Debe aparecer en el documento del Hito 2 como corrección."
+          }
+        },
+        {
+          "id": "A4",
+          "nombre": "Uso del tiempo y del formato",
+          "pts": 7,
+          "niveles": {
+            "d": "Cierran entre 4:30 y 5:00, reparten la palabra entre todos los integrantes y no leen las láminas.",
+            "c": "Cierran dentro del tiempo pero hablan uno o dos integrantes, o leen buena parte del contenido.",
+            "e": "Se les corta a los 5:00 con contenido central sin mostrar.",
+            "i": "Se les corta a los 5:00 antes de mostrar la propuesta o el prototipo."
+          },
+          "fb": {
+            "d": "El control del tiempo es una destreza profesional. Repitan el mismo ensayo cronometrado en el Hito 2.",
+            "c": "Repartan la exposición: cada integrante toma un tramo y lo defiende. Leer la lámina resta y se nota desde la primera fila.",
+            "e": "Ensayen con cronómetro y corten contenido antes de presentar. Lo que no cabe en 5 minutos va al documento.",
+            "i": "Presentar sin ensayo cronometrado cuesta el bloque completo. Ensayen tres veces con reloj antes del Hito 2."
+          }
+        },
+        {
+          "id": "A5",
+          "nombre": "Respuesta del integrante consultado",
+          "pts": 10,
+          "niveles": {
+            "d": "El integrante elegido al azar responde con precisión y conecta la respuesta con una decisión del equipo.",
+            "c": "Responde correctamente pero sin fundamento, o pide apoyo del grupo.",
+            "e": "Responde de forma vaga o contradice lo que el grupo acaba de presentar.",
+            "i": "No responde."
+          },
+          "fb": {
+            "d": "El equipo demuestra trabajo repartido. Sostengan esa práctica: cada integrante debe poder explicar el todo.",
+            "c": "Antes de presentar, háganse las preguntas entre ustedes. Saber la respuesta y saber fundamentarla no es lo mismo.",
+            "e": "La contradicción entre lo presentado y lo respondido indica que el trabajo no se compartió. Corrijan la distribución de tareas ahora.",
+            "i": "Se aplica el factor individual al integrante consultado y el bloque pierde estos puntos para todo el grupo."
+          }
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "nombre": "Documento de propuesta",
+      "pts": 50,
+      "criterios": [
+        {
+          "id": "B1",
+          "nombre": "Estructura formal completa",
+          "pts": 8,
+          "niveles": {
+            "d": "Tapa, índice, introducción, desarrollo paginado, conclusión, bibliografía y anexos, con numeración y encabezados consistentes.",
+            "c": "Están todas las partes pero hay fallas de paginación, índice desactualizado o encabezados irregulares.",
+            "e": "Faltan una o dos partes obligatorias.",
+            "i": "Faltan tres o más partes obligatorias, o el documento es un conjunto de láminas exportadas."
+          },
+          "fb": {
+            "d": "La forma está resuelta. Reutilicen esta plantilla en los dos hitos siguientes.",
+            "c": "Actualicen el índice automático y unifiquen estilos de título antes de exportar a PDF.",
+            "e": "Las partes faltantes están enumeradas en el anexo de formato de este documento. No son opcionales.",
+            "i": "Un documento profesional no se arma exportando láminas. Rehagan la estructura completa para el Hito 2."
+          }
+        },
+        {
+          "id": "B2",
+          "nombre": "Problema y evidencia",
+          "pts": 10,
+          "niveles": {
+            "d": "El problema está dimensionado con datos verificables y citados de fuentes chilenas o sectoriales recientes, y se explica a quién afecta.",
+            "c": "Hay datos, pero de fuentes débiles o que no terminan de conectar con el problema.",
+            "e": "El problema se afirma sin evidencia.",
+            "i": "No hay problema definido, o se copia un caso conocido sin adaptación."
+          },
+          "fb": {
+            "d": "La evidencia sostiene la propuesta. Vuelvan a esos datos en la conclusión del Hito 3 para medir la promesa.",
+            "c": "Reemplacen las fuentes secundarias por fuentes primarias: instituciones, estudios sectoriales o datos abiertos del Estado.",
+            "e": "Una afirmación sin dato es una opinión. Busquen al menos dos cifras que dimensionen el problema y cítenlas.",
+            "i": "Sin problema definido no hay proyecto. Deben acordar el problema con el docente antes del Hito 2."
+          }
+        },
+        {
+          "id": "B3",
+          "nombre": "Arquitectura cliente servidor y capas",
+          "pts": 12,
+          "niveles": {
+            "d": "Diagrama propio con cliente, servidor, capas y responsabilidades de cada una, más la explicación de qué ocurre en cada capa al ejecutar un caso de uso concreto.",
+            "c": "Diagrama correcto, pero la explicación se queda en la definición general y no recorre un caso de uso.",
+            "e": "Diagrama genérico copiado, sin relación con el producto propuesto.",
+            "i": "No hay arquitectura descrita."
+          },
+          "fb": {
+            "d": "Ese diagrama es el contrato del semestre. Todo cambio posterior debe quedar registrado en la bitácora de decisiones.",
+            "c": "Tomen un caso de uso, por ejemplo el registro de un usuario, y describan qué hace cada capa en ese recorrido.",
+            "e": "Un diagrama copiado no describe su sistema. Redibujen usando los nombres reales de sus componentes.",
+            "i": "Este es el contenido central de la Unidad 1. Debe aparecer completo en el Hito 2."
+          }
+        },
+        {
+          "id": "B4",
+          "nombre": "Selección de lenguajes y frameworks",
+          "pts": 10,
+          "niveles": {
+            "d": "Comparan al menos dos alternativas con criterios explícitos como curva de aprendizaje, soporte, comunidad, costo y compatibilidad móvil, y firman una decisión asumiendo su desventaja.",
+            "c": "Justifican la elección pero sin alternativa comparada o sin nombrar la desventaja que asumen.",
+            "e": "La justificación se reduce a popularidad o a que ya conocían la herramienta.",
+            "i": "Enumeran tecnologías sin justificar."
+          },
+          "fb": {
+            "d": "Decidir asumiendo el costo es exactamente lo que se espera de un arquitecto. Repitan el ejercicio con el motor de datos en el Hito 2.",
+            "c": "Agreguen la alternativa descartada y la razón del descarte. La decisión se evalúa por el contraste, no por el resultado.",
+            "e": "Que sea popular no lo hace correcto para su caso. Definan tres criterios propios y evalúen dos candidatos contra ellos.",
+            "i": "Una lista de tecnologías no es una decisión de arquitectura. Es corrección obligatoria para el Hito 2."
+          }
+        },
+        {
+          "id": "B5",
+          "nombre": "Presentación editorial y coherencia de marca",
+          "pts": 6,
+          "niveles": {
+            "d": "El documento se lee como material de venta: identidad visual consistente, imágenes propias del prototipo y sin errores de ortografía ni de formato.",
+            "c": "Presentación cuidada con detalles sueltos: tipografías mezcladas, imágenes de baja resolución o algunos errores.",
+            "e": "Formato descuidado que dificulta la lectura.",
+            "i": "Documento sin formato, o con errores que impiden leerlo como pieza profesional."
+          },
+          "fb": {
+            "d": "La pieza ya funciona como material comercial. Consérvenla como base del video del Hito 3.",
+            "c": "Unifiquen tipografías y exporten las imágenes del prototipo a resolución alta.",
+            "e": "Definan una plantilla con dos tipografías y tres colores, y apliquen la misma a todo el documento.",
+            "i": "Se pidió una pieza de marketing, no un borrador. Rehagan la presentación editorial completa."
+          }
+        },
+        {
+          "id": "B6",
+          "nombre": "Bibliografía y citas",
+          "pts": 4,
+          "niveles": {
+            "d": "Referencias en norma APA séptima edición, citadas en el cuerpo y todas verificables.",
+            "c": "Referencias correctas pero con citas incompletas dentro del texto.",
+            "e": "Lista de enlaces sin norma ni citas en el cuerpo.",
+            "i": "Sin bibliografía, o con referencias que no existen."
+          },
+          "fb": {
+            "d": "Mantengan el gestor de referencias que están usando durante todo el semestre.",
+            "c": "Cada dato del cuerpo necesita su cita. Una referencia sin llamada en el texto no cuenta.",
+            "e": "Pasen la lista a norma APA y agreguen las citas dentro del texto donde usaron cada fuente.",
+            "i": "Una referencia inexistente activa el protocolo de integridad académica descrito en los anexos."
+          }
+        }
+      ]
+    }
+  ]
+}

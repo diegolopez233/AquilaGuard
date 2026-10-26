@@ -1,0 +1,279 @@
+# Aquila Guard Propuesta del Hito 1
+
+## Introducción
+
+Para personas mayores que dudan ante un enlace, correo o mensaje sospechoso, Aquila Guard propone mostrar señales comprensibles y una acción de verificación antes de que entreguen información o respondan. La oportunidad es acompañar una decisión cotidiana con una explicación que la persona pueda entender y revisar.
+
+Un aviso de urgencia, un supuesto premio o una solicitud de clave pueden confundirse con comunicaciones legítimas. La persona recibe el contenido en su propio teléfono y necesita decidir antes de actuar. Pedir ayuda a un familiar o buscar información por cuenta propia son alternativas posibles, pero no siempre están disponibles en ese momento. Esa situación orienta el diseño de una experiencia breve, con lenguaje sencillo y acceso a las razones del resultado.
+
+Esta propuesta presenta el problema, el público inicial y el valor que se busca entregar. Explica el recorrido del prototipo, su organización de contenidos y la arquitectura prevista para sostenerlo. Además, compara alternativas tecnológicas y expone el costo de cada decisión para que el alcance resulte viable durante el semestre.
+
+El Hito 1 permite comprobar la experiencia mediante ejemplos ficticios. El prototipo funciona en el navegador con HTML, CSS y JavaScript y conserva sus resultados solo durante la sesión. Las reglas locales ilustran señales de revisión. Todavía no existe evidencia de precisión para clasificar fraudes reales, ni una conexión a servicios de reputación o a una base de datos.
+
+El objetivo de este documento es ofrecer una propuesta que pueda demostrarse y discutirse con un cliente y con el docente. La promesa inicial se verificará recorriendo la entrada, las razones y el siguiente paso. La eficacia preventiva y la disposición a pagar necesitan validación posterior con usuarios y casos evaluados.
+
+## 1 Problema y evidencia
+
+El problema específico es la dificultad para decidir cómo actuar ante una comunicación digital sospechosa cuando faltan conocimientos o apoyo inmediato. El público inicial son personas mayores de 60 años en Chile que usan un teléfono para comunicarse o realizar gestiones. El proyecto aborda señales de phishing y engaños en contenidos que el usuario revisa voluntariamente.
+
+La Subsecretaría de Telecomunicaciones (SUBTEL, 2025) informa que el 96,6 % de los hogares declara acceso propio y pagado a internet y que el 42,9 % del grupo de 60 años o más declara saber realizar transacciones bancarias, compras y pagos en línea por sí mismo (p. 15, tabla 6; p. 43, tabla 13). Son poblaciones distintas y no permiten calcular una tasa de fraude.
+
+Cortés y Ormazábal (2025), en una nota técnica de la Comisión para el Mercado Financiero (CMF), registran 1,1 millones de clientes únicos con reclamos por operaciones fraudulentas durante 2023 y 2024 (p. 8). El dato dimensiona reclamos financieros. No identifica exclusivamente phishing ni acredita casos judicialmente comprobados o una tasa específica en personas mayores.
+
+La CMF (2026) también impulsa una campaña con SENAMA para prevenir fraudes financieros entre personas mayores. Este antecedente respalda la pertinencia del público inicial, sin demostrar todavía que Aquila Guard reduzca fraudes.
+
+### Consecuencia para el diseño
+
+La evidencia de conectividad y habilidades orienta una interfaz que explique por qué conviene detenerse y dónde continuar la verificación. La cifra de reclamos sitúa el problema en el sector financiero, pero el producto no ofrecerá una estimación de pérdidas evitadas sin medición propia.
+
+La necesidad concreta, la frecuencia de uso y las dificultades de comprensión deberán contrastarse con usuarios. No se presentan entrevistas, encuestas ni ventas como actividades ya realizadas.
+
+## 2 Propuesta de valor y alcance
+
+Aquila Guard propone una revisión guiada: la persona introduce un contenido, obtiene razones legibles y encuentra un siguiente paso para verificar por un canal conocido. La propuesta se concentra en ayudar a reconocer señales de engaño antes de interactuar. La visión puede abarcar más modalidades de fraude cuando exista evidencia y capacidad técnica para evaluarlas.
+
+Persona de diseño: Elena, 68 años, personaje ficticio. Usa mensajería y recibe un aviso que dice que su cuenta será suspendida si entrega su clave. Actualmente podría pedir ayuda a un familiar o contactar a su institución por una vía conocida. La app reúne entrada, explicación y recomendación en un mismo recorrido.
+
+El valor se verificará en el prototipo cuando una persona pueda cargar el mensaje de ejemplo, encontrar la razón de la advertencia y describir qué haría después. Se propone observar esas tareas sin ayuda y registrar confusiones, sin confundir el éxito de navegación con precisión para detectar fraude.
+
+### Modelo comercial por validar
+
+Se propone explorar una suscripción institucional para programas de apoyo digital a personas mayores. Organizaciones comunitarias o educativas serían clientes potenciales y las personas mayores serían usuarias. No hay acuerdos, precios ni ingresos confirmados. La hipótesis requiere entrevistas y una estimación de costos antes de ofrecer el servicio.
+
+| Incluido en el Hito 1 | Límite que debe comprender el usuario |
+
+| --- | --- |
+
+| Enlaces, correos y mensajes de ejemplo | Reglas locales de palabras y patrones. No confirman legitimidad ni detectan todas las estafas. |
+
+| Entrada de teléfono | Comprueba formato. No consulta titularidad, reputación ni denuncias. |
+
+| Resultado, alertas y resumen | Muestran la sesión actual. Los datos se pierden al recargar. |
+
+| Ajustes de lectura y privacidad | Texto grande, explicación del tratamiento local y borrado de la sesión. |
+
+## 3 Experiencia del prototipo
+
+El recorrido comienza en Inicio y continúa en Revisar. El usuario elige un tipo de contenido y carga un ejemplo ficticio. Luego analiza el ejemplo, consulta razones, abre Alertas y termina en Resumen. La figura 1 muestra la portada incluida en el material del prototipo.
+
+La demostración debe ejecutarse en el HTML. Cambiar de sección y ver cómo el análisis aparece en Alertas permite observar el flujo completo. Una captura en PowerPoint solo sirve de apoyo visual.
+
+![Figura 1. Inicio de Aquila Guard. Captura incluida en el paquete de aplicación recibido. Conserva la identidad visual del prototipo.](Prototipo_Inicio.png)
+
+## 3.1 Resultado y tratamiento de estados
+
+La figura 2 muestra la revisión de ejemplo. El resultado enumera patrones locales y una recomendación. Si no hay coincidencias, la app indica que sus reglas limitadas pueden omitir contenidos peligrosos. Ese estado no equivale a una confirmación de seguridad.
+
+Una entrada vacía o con formato inválido produce un mensaje de corrección. El análisis simula una espera de 0,6 segundos y permite mostrar un error de demostración. Después de revisar, las fichas y los contadores comparten la misma lista en memoria. Borrar sesión elimina esos contenidos del estado de la demo.
+
+![Figura 2. Resultado del prototipo. Captura del paquete recibido. El comportamiento descrito se contrastó con src/app.js, sin atribuirle detección validada.](Prototipo_Resultado.png)
+
+## 4 Arquitectura de información
+
+La figura 3 organiza las cinco secciones disponibles desde la navegación global. Revisar agrupa el ingreso y el resultado. Alertas reúne las fichas de la sesión, Resumen concentra los contadores y Ajustes reúne lectura y privacidad. Los nombres corresponden al prototipo.
+
+El flujo principal recorre Inicio, Revisar, resultado dentro de Revisar, Alertas y Resumen. Las rutas usan fragmentos de URL. El usuario puede cambiar entre secciones y regresar con los controles del navegador. El resultado no es una sexta pantalla independiente.
+
+![Figura 3. Mapa propio del producto basado en las secciones y rutas del HTML recibido. Imagen independiente disponible en docs/Mapa_Producto.png.](Mapa_Producto.png)
+
+## 5 Arquitectura cliente servidor y capas
+
+La figura 4 distingue lo que hoy se ejecuta de la arquitectura propuesta. En el Hito 1, la presentación y las reglas educativas residen en el navegador. El diseño del producto separa una SPA React con TypeScript, una API Node.js con Express y una capa de datos con PostgreSQL.
+
+El servidor propuesto concentra controladores, servicios de negocio y repositorios. Las capas separan responsabilidades dentro de una aplicación de servidor. No se propone separar cada capa en un microservicio. Los componentes de la figura son nombres del diseño, todavía por implementar.
+
+![Figura 4. Diagrama propio de arquitectura actual y propuesta. Los archivos de src/servidor_propuesto describen responsabilidades y no constituyen una API operativa.](Arquitectura.png)
+
+## 5.1 Recorrido de un caso de uso
+
+Caso propuesto: Elena solicita revisar un mensaje y vuelve a encontrar su ficha en Alertas. La tabla 1 recorre la petición y su retorno. Se propone el recurso POST /api/v1/analisis para expresar el diseño. El Hito 1 no contiene ese endpoint implementado.
+
+### Diferencia respecto de la demo actual
+
+Hoy analyze llama a evaluate en src/app.js y añade un resultado a session. render vuelve a dibujar fichas y contadores. No hay petición HTTP, escritura SQL ni recuperación tras recarga. El archivo db/001_propuesta.sql es una propuesta de esquema con relación uno a uno entre análisis y ficha, sin conexión a la interfaz.
+
+| Componente propuesto | Responsabilidad en la revisión |
+
+| --- | --- |
+
+| RevisarForm en React | Recoge tipo y contenido, valida formato y muestra espera. Envía JSON por HTTPS sin abrir el enlace del mensaje. |
+
+| AnalisisController en Express | Comprueba tipo, tamaño y estructura del cuerpo recibido. Ante entrada inválida responde con un error comprensible. No decide las señales del caso. |
+
+| AnalisisService | Normaliza el contenido, aplica reglas versionadas y devuelve razones y límites. Diferencia ausencia de coincidencias de una garantía de seguridad. |
+
+| AnalisisRepository y AlertaRepository | Aíslan consultas parametrizadas. Guardan el análisis y su ficha dentro de una operación consistente, conforme al modelo y política de datos que se definan. |
+
+| PostgreSQL | Conserva registros y la relación por clave foránea entre analisis y alertas. Aplica restricciones de integridad. |
+
+| Retorno al cliente | Datos vuelve al servicio, al controlador y a la vista. La interfaz presenta razones y actualiza las fichas. La consulta posterior recuperaría los datos persistidos. |
+
+## 6 Selección del frontend
+
+La comparación de la tabla 2 utiliza criterios del producto: continuidad del flujo, aprendizaje, soporte y uso móvil. React y Vue permiten aplicaciones con TypeScript según sus guías oficiales (React, s. f.; Vue.js, s. f.). La valoración de adecuación al proyecto es una decisión de diseño, sin mediciones de velocidad o productividad.
+
+### Decisión propuesta y desventaja asumida
+
+Se propone React con TypeScript para dividir formulario, resultado y fichas y mantener la elección del diseño ya presentado. Vue queda como alternativa válida. El criterio decisivo es mantener coherencia con el stack comprometido, sujeto a confirmar que el equipo puede sostenerlo.
+
+Se asume aprender JSX y hooks, configurar el build y mantener dependencias. TypeScript ayuda a revisar tipos durante el desarrollo, pero no valida por sí solo datos recibidos desde la red. La demo actual permanece en HTML, CSS y JavaScript porque ya permite demostrar la experiencia requerida.
+
+| Criterio | React con TypeScript | Vue con TypeScript |
+
+| --- | --- | --- |
+
+| Experiencia de revisión | Componentes para formulario, razones y fichas con estado compartido. | Componentes y reactividad para el mismo recorrido. |
+
+| Curva de aprendizaje | Requiere JSX, hooks y disciplina de estado. Experiencia del equipo por confirmar. | Plantillas próximas a HTML y aprendizaje de su reactividad. Experiencia por confirmar. |
+
+| Soporte y comunidad | Documentación oficial para componentes y hooks tipados. | Documentación oficial para TypeScript y componentes. |
+
+| Compatibilidad móvil | Interfaz web adaptable. Requiere comprobar foco, tamaños y navegación. | Interfaz web adaptable con las mismas verificaciones de uso. |
+
+| Costo y mantenimiento | Build, dependencias y configuración de tipos. | Build y configuración del ecosistema Vue. |
+
+## 6.1 Selección del servidor
+
+Node.js con Express y TypeScript se contrasta con FastAPI en Python. Express ofrece enrutamiento y middleware; FastAPI incorpora el uso de tipos Python y documentación de la API (Express, s. f.; FastAPI, s. f.). La tabla 3 expone el intercambio aplicado al alcance del equipo.
+
+### Decisión propuesta y desventaja asumida
+
+Se propone Node.js con Express y TypeScript para mantener continuidad de lenguaje y ubicar reglas fuera del controlador. Se descarta FastAPI para evitar introducir Python en la aplicación propuesta, aunque su soporte de esquemas sería útil.
+
+El costo asumido es definir validación en ejecución, tratamiento de errores y convenciones de estructura. La elección no demuestra mayor rendimiento ni menor precio. Esas comparaciones necesitarían mediciones y cotizaciones.
+
+| Criterio | Express con TypeScript | FastAPI con Python |
+
+| --- | --- | --- |
+
+| Contrato HTTP | Rutas y middleware. Validación del cuerpo por implementar de forma explícita. | Esquemas basados en tipos y documentación automática. |
+
+| Aprendizaje | Continúa JavaScript y TypeScript entre navegador y servidor. | Añade un lenguaje de aplicación al frontend previsto. |
+
+| Mantenimiento | Controladores, servicios y repositorios separados por convención del proyecto. | Módulos, dependencias y servicios separados por convención del proyecto. |
+
+| Soporte | Guías oficiales de rutas, middleware y API. | Guías oficiales de validación, errores y dependencias. |
+
+| Costo de operación | Un servidor y base de datos por desplegar y supervisar. Sin presupuesto confirmado. | Un servidor y base de datos por desplegar y supervisar. Sin presupuesto confirmado. |
+
+## 6.2 Selección de persistencia
+
+PostgreSQL se compara con MongoDB para conservar análisis y estado de lectura. PostgreSQL documenta claves foráneas e integridad transaccional. MongoDB usa documentos flexibles y también ofrece transacciones (PostgreSQL Global Development Group, s. f.; MongoDB, s. f.). La tabla 4 compara su ajuste al modelo, sin afirmar que una opción sea incapaz de cumplirlo.
+
+### Decisión propuesta y desventaja asumida
+
+Se propone PostgreSQL porque la relación entre análisis y ficha ya está expresada en el esquema entregado. Las claves permiten conservar esa asociación de forma explícita. MongoDB resultaría viable, pero la flexibilidad documental no es la necesidad principal del modelo inicial.
+
+Se asumen migraciones, configuración y operación de la base. El esquema actual conserva tipo, resultado y fecha del análisis y estado de lectura de la ficha. No conserva el texto original ni las razones, por lo que recuperar esos detalles después de recargar requerirá ampliar el modelo o reducir lo almacenado, conforme a una decisión de minimización.
+
+| Criterio | PostgreSQL | MongoDB |
+
+| --- | --- | --- |
+
+| Modelo del producto | Tablas analisis y alertas relacionadas por clave foránea. | Documentos con ficha embebida o colección relacionada. |
+
+| Integridad | Restricciones y relación explícitas en el esquema SQL. | Diseño y validación de estructura y relaciones entre documentos. |
+
+| Aprendizaje | SQL, migraciones y consultas parametrizadas. | Modelo documental, consultas e índices. |
+
+| Soporte | Documentación oficial de SQL, claves y transacciones. | Manual oficial de documentos y transacciones. |
+
+| Costo de cambio | Modificar esquema y mantener migraciones. | Gestionar evolución de documentos y coherencia de los existentes. |
+
+## 7 Renderizado y viabilidad
+
+La propuesta usa una aplicación de página única. El usuario mantiene contexto entre revisión, resultado y ficha, sin volver a cargar un documento completo en cada sección. El prototipo representa esa decisión al alternar secciones con JavaScript y fragmentos de URL. La arquitectura de información sigue siendo necesaria aunque exista un solo archivo HTML.
+
+### SPA frente a multipágina
+
+Una aplicación multipágina podría servir documentos independientes y rutas directas desde el servidor. Para conservar el recorrido necesitaría transferir el estado o almacenarlo entre cargas. Para esta revisión breve se propone SPA porque el estado del análisis conecta varias vistas y la continuidad facilita la demostración.
+
+El costo asumido es depender de JavaScript y gestionar foco, historial y mensajes de cambio de estado. El diseño móvil corresponde a una web adaptable. No se ofrece todavía una aplicación nativa o una PWA instalada.
+
+### Recursos y sostenibilidad
+
+El prototipo puede abrirse sin instalación de dependencias y sin internet. Para el producto habrá costos de alojamiento, base de datos, copias, mantenimiento y eventual consulta de fuentes externas. No hay cotización ni capacidad de pago confirmadas. La suscripción institucional sigue siendo una hipótesis comercial.
+
+La validación propuesta incluye observar el recorrido con personas del público objetivo, registrar si comprenden las razones y revisar errores de interpretación. Antes de afirmar detección de fraude, se necesitaría un conjunto de casos etiquetados y medir falsos positivos y falsos negativos. Ninguna métrica de precisión se presenta como obtenida.
+
+### Privacidad desde el diseño
+
+En la demo se usan ejemplos ficticios y el estado queda en memoria de la pestaña. No se realizan consultas externas desde src/app.js. En el producto, deberán definirse acceso, retención y eliminación antes de conservar contenido que pueda contener datos de terceros. La propuesta inicial de base de datos evita guardar el texto original.
+
+## 8 Conclusión
+
+Aquila Guard cuenta con una experiencia demostrable para introducir contenido de ejemplo, leer señales y encontrar una recomendación de verificación. La propuesta convierte el objetivo amplio de prevenir fraudes en un primer recorrido concreto para personas mayores. El aporte del Hito 1 es mostrar cómo se relacionan la necesidad, la navegación y la arquitectura elegida.
+
+La revisión del prototipo permite separar dos compromisos. La experiencia puede comprobarse mediante un flujo navegable. La detección de fraude real necesita evidencia de rendimiento y fuentes de información que todavía no forman parte de la demo. Mantener esa diferencia ayuda a evitar una promesa que el equipo no pueda demostrar.
+
+La arquitectura propuesta distribuye responsabilidades entre cliente, controladores, negocio y repositorios. Las comparaciones tecnológicas explican por qué se proponen React, Express y PostgreSQL, y qué trabajo adicional supone adoptarlos. La firma de esa decisión y la confirmación de habilidades corresponden a los integrantes.
+
+Quedan por validar la comprensión de las recomendaciones, la necesidad en situaciones de uso reales y la disposición de una institución a financiar el servicio. La sección 001 y la ciudad Santiago, Providencia están confirmadas. Todavía deben crearse las cuentas de GitHub y el repositorio y comprobar el acceso del docente. Esos pasos no se sustituyen con un paquete comprimido.
+
+La principal lección de diseño es que una advertencia solo aporta valor si la persona entiende su razón y sabe cómo continuar. Ese criterio orientará las pruebas con usuarios y cualquier ampliación del sistema. El proyecto mantendrá el problema inicial y ajustará sus compromisos a evidencia verificable.
+
+## 9 Bibliografía
+
+Comisión para el Mercado Financiero. (2026, 19 de agosto). CMF ampliará despliegue nacional de campaña de educación financiera para personas mayores junto a SENAMA. https://www.cmfchile.cl/portal/prensa/625/w4-article-112804.html
+
+Cortés, J., & Ormazábal, F. (2025, octubre). Antecedentes sobre la aplicación de la Ley de Fraudes (Nota Técnica N.º 02/25). Comisión para el Mercado Financiero. https://www.cmfchile.cl/portal/estadisticas/617/articles-100079_doc_pdf.pdf
+
+Express. (s. f.). Express: Fast, unopinionated, minimalist web framework for Node.js. https://expressjs.com/
+
+FastAPI. (s. f.). FastAPI. https://fastapi.tiangolo.com/
+
+MongoDB. (s. f.). What is MongoDB? MongoDB Manual. https://www.mongodb.com/docs/manual/
+
+PostgreSQL Global Development Group. (s. f.). What is PostgreSQL? PostgreSQL Documentation. https://www.postgresql.org/docs/current/intro-whatis.html
+
+React. (s. f.). Using TypeScript. https://react.dev/learn/typescript
+
+Subsecretaría de Telecomunicaciones. (2025, 14 de noviembre). Informe final Estudio Duodécima Encuesta sobre acceso, usos y usuarios de Internet en Chile. https://www.subtel.gob.cl/wp-content/uploads/2026/02/Informe-Final-Acceso-y-Uso-Internet-2025_03.pdf
+
+Vue.js. (s. f.). Using Vue with TypeScript. https://vuejs.org/guide/typescript/overview.html
+
+## Anexo A Uso de inteligencia artificial
+
+Herramienta de esta revisión: Codex de OpenAI. Uso: lectura y contraste de la rúbrica del Hito 1, análisis de texto y estructura del PowerPoint, redacción de la propuesta y documentos de apoyo, diagramas propios y preparación del paquete de entrega.
+
+Verificación de contenidos: contraste de los once criterios con el objeto RUB.h1 del archivo oficial, consulta de las fuentes primarias de las cifras y de las alternativas tecnológicas, lectura del HTML y de src/app.js, y comparación de integridad de los archivos de aplicación conservados.
+
+Verificación de forma: comprobación de páginas, índice, enlaces locales y archivos requeridos. Las láminas se renderizaron para revisar su contenido visual. El PDF de presentación es una representación visual del PPTX recibido, que se conserva como archivo de referencia.
+
+El prototipo y sus capturas proceden del paquete proporcionado por el equipo. La presente revisión no acredita quién escribió cada parte ni qué herramientas se usaron históricamente. El equipo debe completar esa declaración de origen antes de presentar y explicar el código con sus propias palabras.
+
+No se generaron firmas, encuestas, resultados de precisión, cuentas de GitHub ni historial de aportes. La decisión técnica requiere ratificación auténtica. El docente autorizó el equipo de tres integrantes, según confirmación del solicitante del 25 de octubre de 2026.
+
+| Registro que completa el equipo | Información por registrar |
+
+| --- | --- |
+
+| Uso anterior de IA | Herramientas, partes intervenidas y verificación efectivamente realizada. |
+
+| Comprensión compartida | Cada integrante explica navegación, evaluate, sesión en memoria y arquitectura propuesta. |
+
+| Validación humana | Fecha y observaciones reales de pruebas con usuarios y ensayos. |
+
+## Anexo B Ratificación de la decisión técnica
+
+Decisión sometida a ratificación: mantener HTML, CSS y JavaScript en la demo del Hito 1 y proponer React con TypeScript, Node.js con Express y TypeScript y PostgreSQL para el producto. Preferir una SPA por la continuidad del flujo de revisión.
+
+Desventajas que el equipo debe comprender: aprendizaje y build del frontend, validación explícita de entradas en el servidor y mantenimiento de migraciones y operación de la base de datos. La matriz comparativa de la sección 6 forma parte de la decisión.
+
+Estado: propuesta preparada y pendiente de firma auténtica. Escribir un nombre en esta tabla no acredita aceptación. Cada integrante registra su aprobación y fecha real. Después de leer las comparaciones, puede firmar a mano una copia impresa del anexo y digitalizarla, o dibujar su firma en el PDF. La pauta no especifica una tecnología de firma. Mantener la página firmada dentro de la propuesta final.
+
+### Datos de cierre
+
+Datos confirmados: sección 001 y ciudad Santiago, Providencia. El equipo informó que todavía no tiene cuentas de GitHub ni repositorio. Crear las cuentas personales y el repositorio, registrar sus usuarios y URL y comprobar el acceso docente y los colaboradores. El historial debe reflejar aportes reales.
+
+La pauta recibida fija cierre el 20 de septiembre de 2026 a las 23:59 y presentación del 21 al 23 de septiembre. Esta revisión posterior no acredita la fecha de entrega original ni una nueva autorización de plazo. Corresponde contrastar esos registros con el docente.
+
+| Integrante | Decisión y observación | Fecha y firma auténtica |
+
+| --- | --- | --- |
+
+| Diego Lopez |  |  |
+
+| Javier Rodriguez |  |  |
+
+| Milovan Solis |  |  |

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="es-CL">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="color-scheme" content="light">
+  <title>Inicio | Aquila Guard</title>
+  <link rel="icon" type="image/png" href="assets/aquila_guard_logo.png">
+  <link rel="stylesheet" href="assets/app.css">
+  <script src="src/app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
+<div class="app-shell">
+  <aside class="sidebar">
+    <a class="brand" href="#inicio"><img src="assets/aquila_guard_logo.png" alt=""><span><b>Aquila Guard</b><small>Orientación digital</small></span></a>
+    <nav class="nav" aria-label="Navegación principal"><a class="nav-btn" href="#inicio"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10.5V20h13v-9.5"/><path d="M9.5 20v-5h5v5"/></svg><span>Inicio</span></a><a class="nav-btn" href="#revisar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5M11 8v6M8 11h6"/></svg><span>Revisar</span></a><a class="nav-btn" href="#alertas"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4"/></svg><span>Alertas</span></a><a class="nav-btn" href="#resumen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20v-12"/></svg><span>Resumen</span></a><a class="nav-btn" href="#ajustes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.9 4.9 7 7M17 17l2.1 2.1M2 12h3M19 12h3M4.9 19.1 7 17M17 7l2.1-2.1"/></svg><span>Ajustes</span></a></nav>
+    <div class="side-card"><div class="small">ESTADO DE LA DEMO</div><strong>Revisión manual</strong><p>Solo ejemplos ficticios. Sin monitoreo ni servicios externos.</p></div>
+  </aside>
+  <main class="content" id="main">
+    <header class="topbar"><div><p class="eyebrow">Centro de orientación</p><h2 id="page-title">Tu orientación digital</h2></div><div class="profile"><span class="avatar" aria-hidden="true">D</span><div><b>Demo local</b><span>Sin registro de cuenta</span></div></div></header>
+    <p class="notice">Usa solo ejemplos ficticios. Esta demostración no confirma si un contenido es seguro.</p>
+
+    <section id="inicio" class="screen" aria-labelledby="h-inicio">
+      <div class="hero">
+        <div class="hero-main">
+          <div class="hero-logo"><img src="assets/aquila_guard_logo.png" alt=""><div>Aquila Guard<small>Orientación digital, paso a paso</small></div></div>
+          <h1 id="h-inicio" tabindex="-1">Una pausa para decidir con más información.</h1>
+          <p>Revisa un enlace, un correo, un mensaje o un teléfono. Obtén razones sencillas y un siguiente paso antes de interactuar.</p>
+          <div class="hero-actions"><a class="button btn-primary primary" href="#revisar">Revisar ahora <span aria-hidden="true">→</span></a><button class="btn-ghost" id="tour" type="button">Ver recorrido</button></div>
+        </div>
+        <div class="score-card"><div class="score-head"><div><b>Una revisión a tu ritmo</b><p class="hint">Elige qué contenido compartir</p></div><span class="status-pill">Demo local</span></div><div class="score-ring" aria-label="Cuatro tipos de contenido disponibles"><div class="inside"><strong>4</strong><span>tipos</span></div></div><p class="score-foot">Entrada manual y reglas locales. No es un índice de protección.</p></div>
+      </div>
+      <div id="tour-help" class="card tour-help" hidden><h2>Tu recorrido en tres pasos</h2><ol><li>En Revisar, elige un tipo y carga un ejemplo.</li><li>Lee el resultado de ejemplo y su recomendación.</li><li>Continúa a Alertas y después a Resumen.</li></ol><a href="#revisar">Comenzar el recorrido</a></div>
+      <div class="grid-4"><a class="quick" href="#revisar" data-review-type="enlace"><span class="quick-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.5.5l2-2a5 5 0 0 0-7-7l-1.15 1.15M14 11a5 5 0 0 0-7.5-.5l-2 2a5 5 0 0 0 7 7l1.15-1.15"/></svg></span><b>Revisar enlace</b><span>Observa señales en una dirección ficticia.</span></a><a class="quick" href="#revisar" data-review-type="correo"><span class="quick-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span><b>Analizar correo</b><span>Revisa el texto de un ejemplo de correo.</span></a><a class="quick" href="#revisar" data-review-type="mensaje"><span class="quick-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-8 8H5l-3 2 1-5a8 8 0 1 1 18-5Z"/></svg></span><b>Revisar mensaje</b><span>Explora palabras y patrones locales.</span></a><a class="quick" href="#revisar" data-review-type="telefono"><span class="quick-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3H4a1 1 0 0 0-1 1c0 9.4 7.6 17 17 17a1 1 0 0 0 1-1v-3l-5-1-2 2a15 15 0 0 1-8-8l2-2-1-5Z"/></svg></span><b>Revisar teléfono</b><span>Comprueba el formato, sin consultar reportes.</span></a></div>
+      <div class="two-col">
+        <div class="card"><div class="card-title"><h2>Actividad reciente</h2><a href="#alertas">Ver todas</a></div><div class="activity-list" id="recent-list"><p class="empty-state">Aún no hay resultados. Comienza en Revisar.</p></div></div>
+        <div class="card"><div class="card-title"><h2>Esta sesión</h2></div><div class="stat-stack"><div class="mini-stat"><div class="row"><span>Ejemplos revisados</span><strong data-count="total">0</strong></div><div class="bar" aria-hidden="true"><div data-meter="total"></div></div></div><div class="mini-stat"><div class="row"><span>Con señales locales</span><strong data-count="signals">0</strong></div><div class="bar" aria-hidden="true"><div data-meter="signals"></div></div></div><div class="mini-stat"><div class="row"><span>Fichas sin leer</span><strong data-count="unread">0</strong></div><div class="bar" aria-hidden="true"><div data-meter="unread"></div></div></div></div><p class="hint">Los contadores se reinician al recargar. Las barras representan proporciones de esta sesión.</p></div>
+      </div>
+    </section>
+
+    <section id="revisar" class="screen" aria-labelledby="h-revisar" hidden>
+      <div class="scan-layout"><div>
+        <div class="card scan-box"><div class="card-title"><div><h1 id="h-revisar" tabindex="-1">Revisar un contenido</h1><p class="hint">Elige un tipo. El resultado es una simulación, no una detección validada.</p></div><span class="status-pill">Ejemplo local</span></div>
+          <form id="scan-form" novalidate>
+            <fieldset><legend>Tipo de contenido</legend><div class="scan-tabs types">
+              <label class="scan-tab"><input type="radio" name="tipo" value="enlace" checked> Enlace</label>
+              <label class="scan-tab"><input type="radio" name="tipo" value="correo"> Correo</label>
+              <label class="scan-tab"><input type="radio" name="tipo" value="mensaje"> Mensaje / SMS</label>
+              <label class="scan-tab"><input type="radio" name="tipo" value="telefono"> Teléfono</label>
+            </div></fieldset>
+            <label class="field-label" id="input-label" for="scan-input">Pega un enlace ficticio</label>
+            <p class="hint" id="input-help"></p>
+            <div class="input-wrap"><textarea id="scan-input" rows="3" aria-describedby="input-help input-error" spellcheck="false"></textarea></div>
+            <p class="error" id="input-error" role="alert"></p>
+            <div class="actions sample-actions"><button id="example" class="btn-soft" type="button">Cargar ejemplo con señales</button><button id="neutral" class="btn-soft" type="button">Cargar ejemplo sin señales</button></div>
+            <details><summary>Cómo funciona esta simulación</summary><p>Detecta las palabras «urgente», «suspendida», «bloqueo», «clave» y «premio», el patrón «banc0» y direcciones que incluyen http sin cifrado. En teléfonos solo explica que su identidad no se ha comprobado. No consulta reputación, no comprueba remitentes ni visita direcciones.</p></details>
+            <label class="check"><input type="checkbox" id="fail-demo"> Simular un error de demostración</label>
+            <button class="scan-button" id="analyze" type="submit">Analizar ejemplo</button>
+          </form>
+        </div>
+        <p class="status-message" id="status" role="status" aria-live="polite" aria-atomic="true"></p>
+        <div class="result-card" id="result" hidden><p class="eyebrow">Resultado de ejemplo</p><h2 id="result-title" tabindex="-1"></h2><p class="sample" id="result-input"></p><ul class="reasons" id="reasons"></ul><p class="recommend" id="recommend"></p><p class="hint">La ausencia de señales en esta demo no certifica seguridad. Verifica siempre la identidad por un canal oficial que ya conozcas.</p><div class="actions"><a href="#alertas" class="button primary navy-button">Continuar a Alertas</a><button id="retry" type="button" class="btn-soft">Revisar otro ejemplo</button></div></div>
+      </div><aside class="phone-preview" aria-label="Ilustración del recorrido, sin funciones adicionales"><div class="phone"><div class="phone-top"><span class="notch"></span></div><div class="phone-body"><div class="phone-brand"><img src="assets/aquila_guard_logo.png" alt=""><b>Aquila Guard</b></div><div class="phone-hero"><small>REVISIÓN MANUAL</small><strong>Lee las razones</strong><p>Un ejemplo, una explicación y un siguiente paso.</p></div><div class="phone-grid"><div class="phone-card"><b>Enlace</b>Formato y patrones.</div><div class="phone-card"><b>Correo</b>Texto de ejemplo.</div><div class="phone-card"><b>Mensaje</b>Palabras y contexto.</div><div class="phone-card"><b>Teléfono</b>Solo formato.</div></div><div class="phone-note"><b>Una pausa para verificar</b><p>La demo no certifica seguridad ni vigila tu dispositivo.</p></div></div></div></aside></div>
+    </section>
+
+    <section id="alertas" class="screen" aria-labelledby="h-alertas" hidden>
+      <div class="card"><div class="card-title"><div><h1 id="h-alertas" tabindex="-1">Alertas de esta sesión</h1><p class="hint">«Revisada» indica que leíste la ficha. No certifica seguridad.</p></div><button id="mark" class="btn-soft" type="button">Marcar todas como revisadas</button></div><p id="review-status" class="status-message" role="status"></p><div class="alerts-grid" id="alert-list"></div><div class="actions"><a href="#resumen" class="button primary navy-button">Continuar a Resumen</a><a href="#revisar" class="button btn-soft">Revisar otro contenido</a></div></div>
+    </section>
+
+    <section id="resumen" class="screen" aria-labelledby="h-resumen" hidden>
+      <h1 id="h-resumen" tabindex="-1">Resumen de la sesión</h1><p class="section-help">Estos contadores describen el uso de la demo. No miden protección ni estafas evitadas.</p>
+      <dl class="stats-cards metrics"><div class="stat-card"><dt>Ejemplos revisados</dt><dd id="total">0</dd><small>En esta pestaña</small></div><div class="stat-card"><dt>Con señales locales</dt><dd id="signals">0</dd><small>Reglas de ejemplo</small></div><div class="stat-card"><dt>Fichas sin leer</dt><dd id="unread">0</dd><small>Pendientes de revisión</small></div><div class="stat-card"><dt>Tipos disponibles</dt><dd>4</dd><small>Entrada manual</small></div></dl>
+      <div class="two-col"><div class="card"><div class="card-title"><h2>Actividad por tipo</h2><span class="hint">Sesión actual</span></div><div class="chart" role="group" aria-label="Cantidad de ejemplos por tipo"><div class="chart-col"><strong data-type-count="enlace">0</strong><div class="chart-track" aria-hidden="true"><div class="chart-bar" data-type-bar="enlace"></div></div><span>Enlace</span></div><div class="chart-col"><strong data-type-count="correo">0</strong><div class="chart-track" aria-hidden="true"><div class="chart-bar" data-type-bar="correo"></div></div><span>Correo</span></div><div class="chart-col"><strong data-type-count="mensaje">0</strong><div class="chart-track" aria-hidden="true"><div class="chart-bar" data-type-bar="mensaje"></div></div><span>Mensaje</span></div><div class="chart-col"><strong data-type-count="telefono">0</strong><div class="chart-track" aria-hidden="true"><div class="chart-bar" data-type-bar="telefono"></div></div><span>Teléfono</span></div></div><p class="hint">Distribución de los ejemplos que ingresaste, sin historial externo.</p></div><div class="card"><div class="card-title"><h2>Lectura de fichas</h2></div><div class="stat-stack"><div class="mini-stat"><div class="row"><span>Fichas revisadas</span><strong data-count="reviewed">0</strong></div><div class="bar" aria-hidden="true"><div data-meter="reviewed"></div></div></div><div class="mini-stat"><div class="row"><span>Fichas sin leer</span><strong data-count="unread">0</strong></div><div class="bar" aria-hidden="true"><div data-meter="unread"></div></div></div></div><p class="hint">Leer una ficha no modifica sus señales locales.</p></div></div>
+      <div class="actions"><a href="#revisar" class="button primary navy-button">Revisar otro contenido</a><a href="#inicio" class="button btn-soft">Volver al inicio</a></div>
+    </section>
+
+    <section id="ajustes" class="screen" aria-labelledby="h-ajustes" hidden>
+      <h1 id="h-ajustes" tabindex="-1">Ajustes de la demo</h1>
+      <div class="two-col"><div class="card"><div class="card-title"><h2>Lectura y uso</h2></div><div class="settings-list"><label class="setting" for="large-text"><span><b>Aumentar el tamaño del texto</b><span>La preferencia dura mientras esta página permanece abierta.</span></span><input type="checkbox" id="large-text" class="reading-switch"></label><div class="setting"><div><b>Revisión manual</b><span>La demo solo analiza lo que ingresas. No vigila tu dispositivo.</span></div><span class="status-pill">Local</span></div></div><h2 class="plan-title">Plan de evolución</h2><p class="hint">API y PostgreSQL: propuestos para H2. Integración: H3. Instalación como PWA: evolución futura, no disponible en esta demo.</p></div>
+        <div class="card"><div class="card-title"><h2>Privacidad</h2></div><div class="privacy-note"><b>Explicar, con datos bajo tu control.</b><p class="hint">Usa solo ejemplos sintéticos. El historial se pierde al recargar o cerrar la página.</p></div><div class="settings-actions"><button id="privacy" type="button" class="btn-soft" aria-expanded="false" aria-controls="privacy-content">Ver política de privacidad</button><div id="privacy-content" class="privacy-content" hidden><h2>Privacidad de este prototipo</h2><p>El texto ingresado y las fichas se guardan solo en la memoria de esta pestaña. No usamos cookies, almacenamiento local, analítica, API ni base de datos. Al recargar o cerrar la página se pierden. El botón Borrar sesión elimina las fichas, la entrada y el resultado. Un servidor local puede registrar la solicitud de archivos, pero la aplicación no le envía el texto del formulario.</p><p>Usa únicamente datos sintéticos. Esta explicación corresponde al Hito 1. El tratamiento de datos del producto futuro requiere una política y revisión específicas.</p></div><button id="clear" type="button" class="btn-soft danger-button">Borrar sesión</button><p id="clear-status" class="status-message" role="status"></p></div></div>
+      </div>
+    </section>
+    <footer class="site-footer"><span>Aquila Guard / Orientación digital, paso a paso</span><a href="#ajustes">Privacidad y borrado</a></footer>
+  </main>
+</div>
+<noscript>Esta demostración necesita JavaScript para navegar y generar resultados. Actívalo en tu navegador y vuelve a abrir el archivo.</noscript>
+</body>
+</html>

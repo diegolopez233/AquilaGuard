@@ -1,0 +1,110 @@
+{
+  "date": "2026-10-25",
+  "scope": "Preservación de archivos, enlaces locales, estructura PDF y 15 pruebas de funciones puras. No es QA E2E ni medición de detección.",
+  "preserved_application_files": [
+    {
+      "file": ".env.example",
+      "sha256": "141aba6c6fcdeef62c4109edd4ec8f544bc9bce0459aa52253be1c8cb20150a0"
+    },
+    {
+      "file": ".gitignore",
+      "sha256": "9f289026767074041a3e9d40c07a02b3edcd4b9bca107172b0931424abf2a497"
+    },
+    {
+      "file": "Aquila_Guard_Prototipo_Hito1.html",
+      "sha256": "611f7d7913a8bdd84483994dc4729af7b06f9fb63e523350cb0bc04b6792de0a"
+    },
+    {
+      "file": "assets\\app.css",
+      "sha256": "f17e36d3573ea3ad7011c70465e96a7332f300c5b7cabab3c6b0b388938a3f75"
+    },
+    {
+      "file": "assets\\aquila_guard_logo.png",
+      "sha256": "01e80fbf59e1ab2cc9026967177cf6d557edcb5c8073ee7be49ff881055776b8"
+    },
+    {
+      "file": "db\\001_propuesta.sql",
+      "sha256": "4f5e253031b6a05e997979274abb548d4a1ddbce9e6b9f0967176cd7966aa921"
+    },
+    {
+      "file": "db\\modelo_propuesto.md",
+      "sha256": "ccbb78fb6764765b5030e62913dad97e73279b64fe83d21608b38913345a15bd"
+    },
+    {
+      "file": "src\\app.js",
+      "sha256": "d4f468d0a62e0c5f138d55bd776a40810642b6f75eafb4a522b2ed480ae8376b"
+    }
+  ],
+  "prototype_local_links_checked": 26,
+  "proposal_pages": 18,
+  "slides_pages": 9,
+  "review_pages": 5,
+  "rules": {
+    "date": "2026-10-25",
+    "scope": "Funciones puras validate y evaluate ejecutadas en Node vm. No equivale a pruebas de navegador o de detección real.",
+    "results": [
+      {
+        "name": "Entrada vacía",
+        "passed": true
+      },
+      {
+        "name": "Límite 2000",
+        "passed": true
+      },
+      {
+        "name": "Enlace de ejemplo",
+        "passed": true
+      },
+      {
+        "name": "URL sin esquema",
+        "passed": true
+      },
+      {
+        "name": "Esquema javascript",
+        "passed": true
+      },
+      {
+        "name": "Credenciales URL",
+        "passed": true
+      },
+      {
+        "name": "Correo breve",
+        "passed": true
+      },
+      {
+        "name": "Teléfono válido",
+        "passed": true
+      },
+      {
+        "name": "Teléfono muy corto",
+        "passed": true
+      },
+      {
+        "name": "Patrón banc0",
+        "passed": true
+      },
+      {
+        "name": "Palabra normalizada",
+        "passed": true
+      },
+      {
+        "name": "Ausencia de patrones",
+        "passed": true
+      },
+      {
+        "name": "Aviso de límites",
+        "passed": true
+      },
+      {
+        "name": "Teléfono sin reputación",
+        "passed": true
+      },
+      {
+        "name": "http señal no concluyente",
+        "passed": true
+      }
+    ],
+    "passed": 15,
+    "total": 15
+  }
+}
